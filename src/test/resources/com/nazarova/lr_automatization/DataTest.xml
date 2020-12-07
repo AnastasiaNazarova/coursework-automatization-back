@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+    <test_scheme.products id ="0" name_product="product1" purchase_price="100" number="5" markup="10" shelf_life="10" comment=" "/>
+    <test_scheme.products id ="1" name_product="product2" purchase_price="10" number="10" markup="20" shelf_life="5"  comment="2"/>
+    <test_scheme.products  id ="2" name_product="product3" purchase_price="1" number="1" markup="30" shelf_life="15"  comment="3"/>
+
+</dataset>
