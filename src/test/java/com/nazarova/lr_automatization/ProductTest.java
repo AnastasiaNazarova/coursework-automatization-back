@@ -45,17 +45,14 @@ public class ProductTest {
     @DatabaseSetup(value = "/com/nazarova/lr_automatization/DataTest.xml")
     public void all()  {
 
-        final List<Product> all = productService.getAll();
+        List<Product> all = productService.getAll();
         assertEquals(3, all.size());
-       // assertEquals(3, all.);
-      /*  Optional<Product> productOptional = all.stream()
-                .filter(product -> product.getId() == 1)
-                .findFirst();
-        assertTrue(productOptional.isPresent());
 
-        final Product product = productOptional.get();
-        assertEquals(1, product.getId());
-      */
+
+        Product product = all.get(0);
+        assertEquals(0, product.getId());
+        assertEquals("product1", product.getName_product());
+        assertEquals(10, product.getShelf_life());
 
     }
 
@@ -66,16 +63,10 @@ public class ProductTest {
         final List<ActualProduct> all = actualProductService.getAll();
         assertEquals(2, all.size());
 
-       /* Optional<ActualProduct> actualProductOptional = all.stream()
-                .filter(actualProduct -> actualProduct.getName_product()
-                        .equals("product1"))
-                .findFirst();
-        assertTrue(actualProductOptional.isPresent());
+        ActualProduct actualProduct = all.get(0);
+        assertEquals("product1", actualProduct.getName_product());
+        assertEquals(50, actualProduct.getRevenue());
 
-        ActualProduct actualProduct = actualProductOptional.get();
-        assertEquals(110, actualProduct.getPrice_one());
-        assertEquals(550, actualProduct.getRevenue());
-        assertEquals(440, actualProduct.getProfit());*/
     }
 
     @Test
