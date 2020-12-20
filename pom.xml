@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.nazarova</groupId>
-    <artifactId>lr_automatization</artifactId>
+    <artifactId>back</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>lr_automatization</name>
+    <name>back</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
