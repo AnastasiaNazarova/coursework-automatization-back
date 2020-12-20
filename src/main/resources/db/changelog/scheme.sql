@@ -3,7 +3,7 @@
 
 CREATE TABLE public."staff" (
                        "id"          INTEGER PRIMARY KEY NOT NULL,
-                      "name_staff "       TEXT NOT NULL,
+                      "name_staff"       TEXT NOT NULL,
                        "data_created_staff"   DATE NOT NULL
 );
 CREATE SEQUENCE public."staff_seq";

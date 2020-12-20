@@ -8,6 +8,6 @@ import java.util.List;
 public interface MemberRSORepository extends JpaRepository<MemberRSO, Long> {
 
 
-    List<MemberRSO> getAllBy();
+   // List<MemberRSO> getAllBy();
 
 }

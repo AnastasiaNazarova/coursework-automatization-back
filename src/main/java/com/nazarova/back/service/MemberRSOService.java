@@ -18,7 +18,7 @@ public class MemberRSOService {
     }
 
     public List<MemberRSO> getAllMemberRSO() {
-        return memberRSORepository.getAllBy();
+        return memberRSORepository.findAll();
     }
 
     public void addMemberRSO(MemberRSO memberRSO) {
