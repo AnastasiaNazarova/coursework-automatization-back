@@ -17,7 +17,7 @@ public class GroupService {
     }
 
     public List<Group> getAllGroup() {
-        return groupRepository.getAllBy();
+        return groupRepository.findAll();
     }
 
     public void addGroup(Group group) {

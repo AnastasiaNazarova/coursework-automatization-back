@@ -19,10 +19,14 @@ public class StaffService {
     }
 
     public List<Staff> getAllStaff() {
-        return staffRepository.getAllBy();
+        return staffRepository.findAll();
     }
 
     public void addStaff(Staff staff) {
         staffRepository.save(staff);
     }
+    public void deleteStaff(Long id) {
+        staffRepository.deleteStaff(id);
+    }
+
 }
