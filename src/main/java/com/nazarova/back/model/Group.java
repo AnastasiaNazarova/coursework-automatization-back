@@ -6,6 +6,7 @@ import lombok.Setter;
 
 import javax.persistence.*;
 import java.util.Date;
+import java.util.Set;
 
 
 @Getter
@@ -31,6 +32,10 @@ public class Group {
     @Column(name = "staff_id",  updatable = false, insertable = false)
     private Long staffId;
 
-
+   // @OneToMany( cascade = CascadeType.ALL, orphanRemoval = true)
+    //@JoinColumn(name = "id")
+    //private Set<MemberRSO> memberRSO ;
+   // @Column(name = "member_rso_id",  updatable = false, insertable = false)
+  //  private Long memberRSOId;
 
 }

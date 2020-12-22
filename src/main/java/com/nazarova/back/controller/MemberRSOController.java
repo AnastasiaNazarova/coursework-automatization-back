@@ -12,6 +12,7 @@ import java.util.List;
 @RequestMapping("/member_rso")
 public class MemberRSOController {
 
+
     private final MemberRSOService memberRSOService;
 
     @Autowired
@@ -28,4 +29,10 @@ public class MemberRSOController {
     public void addMemberRSO(@RequestBody MemberRSO memberRSO) {
         memberRSOService.addMemberRSO(memberRSO);
     }
+
+    @GetMapping ("/delete")
+    public void deleteMemberRSO(@RequestParam Long id) {memberRSOService.deleteMemberRSO(id); }
+
+    @GetMapping ("/update")
+    public void updateMemberRSO(@RequestParam Long id) {memberRSOService.updateMemberRSO(id); }
 }

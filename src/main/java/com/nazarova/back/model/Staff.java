@@ -1,10 +1,14 @@
 package com.nazarova.back.model;
 
+import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
+import java.util.Set;
 
 
 @Getter
@@ -23,5 +27,11 @@ public class Staff {
 
     @Column(name = "data_created_staff")
     private Date dataCreatedStaff;
+
+//    @OneToMany( cascade = CascadeType.ALL, orphanRemoval = true)
+//    @JoinColumn(name = "id")
+//    private Set<Group> group ;
+  //  @Column(name = "group_id",  updatable = false, insertable = false)
+  //  private Long groupId;
 
 }

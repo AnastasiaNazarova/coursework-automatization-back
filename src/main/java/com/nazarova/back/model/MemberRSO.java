@@ -1,6 +1,7 @@
 package com.nazarova.back.model;
 
 
+import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 

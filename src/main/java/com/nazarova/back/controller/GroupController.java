@@ -29,4 +29,10 @@ public class GroupController {
         groupService.addGroup(group);
     }
 
+    @GetMapping("/delete")
+    public void deleteGroup (@RequestParam Long id) {groupService.deleteGroup(id); }
+
+    @GetMapping("/update")
+    public void updateGroup (@RequestParam Long id) {groupService.updateGroup(id); }
+
 }

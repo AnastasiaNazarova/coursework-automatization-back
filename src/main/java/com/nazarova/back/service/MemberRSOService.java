@@ -24,4 +24,13 @@ public class MemberRSOService {
     public void addMemberRSO(MemberRSO memberRSO) {
         memberRSORepository.save(memberRSO);
     }
+
+    public void deleteMemberRSO(Long id) {
+        memberRSORepository.deleteMemberRSOById(id);
+    }
+
+    public void updateMemberRSO(Long id) {
+        memberRSORepository.updateMemberRSOById(id);
+    }
+
 }
