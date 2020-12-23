@@ -28,6 +28,12 @@ public class Staff {
     @Column(name = "data_created_staff")
     private Date dataCreatedStaff;
 
+    public Staff(Long id, String nameStaff, Date dataCreatedStaff) {
+        this.id = id;
+        this.nameStaff = nameStaff;
+        this.dataCreatedStaff = dataCreatedStaff;
+    }
+
 //    @OneToMany( cascade = CascadeType.ALL, orphanRemoval = true)
 //    @JoinColumn(name = "id")
 //    private Set<Group> group ;

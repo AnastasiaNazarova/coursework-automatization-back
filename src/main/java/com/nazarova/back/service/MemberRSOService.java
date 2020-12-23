@@ -5,6 +5,7 @@ import com.nazarova.back.repository.MemberRSORepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Date;
 import java.util.List;
 
 @Service
@@ -29,6 +30,11 @@ public class MemberRSOService {
         memberRSORepository.deleteMemberRSOById(id);
     }
 
-
+//    public boolean isAdult(Date dateBirth)
+//   {
+//       Date date = new Date();
+//       date.getTime();
+//       return true;
+//   }
 
 }
