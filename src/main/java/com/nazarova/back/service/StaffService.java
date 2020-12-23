@@ -34,10 +34,4 @@ public class StaffService {
         groupRepository.deleteGroupByStaffId(id);
         staffRepository.deleteStaffById(id);
     }
-    @Transactional
-    public void updateStaff(Long id) {
-        groupRepository.updateGroupByStaffId(id);
-        staffRepository.updateStaffById(id);
-    }
-
 }

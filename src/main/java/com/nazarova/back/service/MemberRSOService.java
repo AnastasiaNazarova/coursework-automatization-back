@@ -29,8 +29,6 @@ public class MemberRSOService {
         memberRSORepository.deleteMemberRSOById(id);
     }
 
-    public void updateMemberRSO(Long id) {
-        memberRSORepository.updateMemberRSOById(id);
-    }
+
 
 }

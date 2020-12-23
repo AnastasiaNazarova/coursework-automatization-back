@@ -33,6 +33,4 @@ public class MemberRSOController {
     @GetMapping ("/delete")
     public void deleteMemberRSO(@RequestParam Long id) {memberRSOService.deleteMemberRSO(id); }
 
-    @GetMapping ("/update")
-    public void updateMemberRSO(@RequestParam Long id) {memberRSOService.updateMemberRSO(id); }
 }

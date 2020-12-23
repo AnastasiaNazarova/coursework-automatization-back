@@ -30,6 +30,4 @@ public class StaffController {
     @GetMapping ("/delete")
     public void deleteStaff(@RequestParam Long id) {staffService.deleteStaff(id); }
 
-    @GetMapping ("/update")
-    public void updateStaff(@RequestParam Long id) {staffService.updateStaff(id); }
-}
+    }

@@ -8,6 +8,4 @@ public interface MemberRSORepository extends JpaRepository<MemberRSO, Long> {
     void deleteMemberRSOById(long id);
     void deleteMemberRSOByGroupId(Long groupId);
 
-    void updateMemberRSOById(Long Id);
-    void updateMemberRSOByGroupId(Long groupId);
 }

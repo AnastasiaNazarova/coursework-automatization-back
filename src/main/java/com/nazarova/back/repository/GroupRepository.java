@@ -8,6 +8,4 @@ public interface GroupRepository  extends JpaRepository<Group, Long> {
     void deleteGroupByStaffId(Long staffId);
     void deleteGroupById(Long id);
 
-    void updateGroupByStaffId(Long staffId);
-    void updateGroupById(Long id);
 }

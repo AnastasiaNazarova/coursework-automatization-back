@@ -34,9 +34,4 @@ public class GroupService {
         groupRepository.deleteGroupById(id);
     }
 
-    @Transactional
-    public void updateGroup(Long id) {
-        memberRSORepository.updateMemberRSOByGroupId(id);
-        groupRepository.updateGroupById(id);
-    }
 }
